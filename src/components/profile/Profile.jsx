@@ -6,11 +6,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     <div className={css.profileWrapper}>
       <div className={css.profile}>
         <div className={css.description}>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-            alt="User avatar"
-            className={css.avatar}
-          />
+          <img src={avatar} alt="User avatar" className={css.avatar} />
           <p className={css.name}>{username}</p>
           <p className={css.tag}>@{tag}</p>
           <p className={css.location}>{location}</p>
